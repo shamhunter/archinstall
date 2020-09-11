@@ -9,4 +9,6 @@
 # 
 Githubup="https://github.com/shamhunter/archinstall/update.sh"
 Gitee="https://gitee.com/shamhunter/archinstall/update.sh"
-
+updatesh(){
+    if [[ 
+}
