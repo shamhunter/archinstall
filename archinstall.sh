@@ -7,4 +7,6 @@
 # URL Blog    : https://www.onethinker.top/
 # Log file    : /tmp/archinstall.log
 # 
+Githubup="https://github.com/shamhunter/archinstall/update.sh"
+Gitee="https://gitee.com/shamhunter/archinstall/update.sh"
 
