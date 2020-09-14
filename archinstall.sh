@@ -7,8 +7,42 @@
 # URL Blog    : https://www.onethinker.top/
 # Log file    : /tmp/archinstall.log
 # 
-Githubup="https://github.com/shamhunter/archinstall/update.sh"
-Gitee="https://gitee.com/shamhunter/archinstall/update.sh"
+
+ARCHLOGAL=(
+"                                _ _       _ _    _                               "
+"     /\                         | |       | |   (_)                              "
+"    /  \       _ __      ___    | |__     | |    _     _ __      _   _    __  __ "
+"   / /\ \     | '__|    / __|   | '_ \    | |   | |   | '_ \    | | | |   \ \/ / "
+"  / ____ \    | |      | (__    | | | |   | |   | |   | | | |   | |_| |    >  <  "
+" /_/    \_\   |_|       \___|   |_| |_|   |_|   |_|   |_| |_|    \__,_|   /_/\_\ "
+)
+HEIGHT=$(tput lines)
+WIDTH=$(tput cols)
+SEP=
+###########color###########
+SUCCESS="echo -en \e[1;32m"
+FAILURE="echo -en \e[1;31m"
+NORMAL="echo -en \e[0m"
+Github_sh="https://github.com/shamhunter/archinstall/update.sh"
+Gitee_sh="https://gitee.com/shamhunter/archinstall/update.sh"
+tmppath=/tmp/
+tmplog=/tmp/install.log
+
 updatesh(){
-    if [[ 
+    echo test
+}
+
+logal(){
+    local i
+    for i in $(seq 1 ${#ARCHLOGAL[@]})
+    do
+        local col=$[i+29]
+        echo -e "\e[1;${col}m${ARCHLOGAL[i-1]}\e[0m"
+    done
+}
+
+main_menu(){
+    clear
+    logal
+    
 }
